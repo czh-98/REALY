@@ -24,6 +24,7 @@ The HIFI3D++ 3DMM is a full-head shape basis built from about 2,000 high quality
 |   n<sub>v</sub>   |  53,215 |     11,510     |  5023 |  53,215 | 11,510 |   26,317   |  20,481 |   20,481  |   20,481  |
 |   n<sub>f</sub>   | 105,840 |     22,800     |  9,976 | 105,840 | 22,800 |   52,261   |  40,832 |   40,832  |   40,832  |
 | basis |   199  |       50      |  300  |   158  |  100  |    300    |   200  |    500   |    526   |
+
 <i><small>HIFI3D<sup>A</sup> stands for the "augmented" version of HIFI3D, which employs data augmentation techniques to construct 3DMM from 200 scans.</small></i>
 
 ## Download
