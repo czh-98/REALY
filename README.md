@@ -1,3 +1,6 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+
 # REALY Benchmark
 
 This is the official repository for 3D face reconstruction evaluation on the **Re**gion-**a**ware benchmark based on the **LY**HM Benchmark (REALY). The REALY benchmark aims to introduce a region-aware evaluation pipeline to measure the fine-grained normalized mean square error (NMSE) of 3D face reconstruction methods from under-controlled image sets.
@@ -33,7 +36,7 @@ Clone the repository and set up a conda environment with all dependencies as fol
 ### 1. Data Preparation
 - *TBD. We are contacting [LYHM](https://www-users.cs.york.ac.uk/~nep/research/LYHM/) to merge the REALY Benchmark with them, so it may require some time. Before that, if you want to evaluate your method(s), please refer to the temporary participation guideline at [REALY homepage](https://www.realy3dface.com/).* 
 
-- Download the benchmark data, and put the "REALY_HIFI3D_keypoints" and "REALY_scan_region" into "REALY/data/".
+- Download the benchmark data, and put the "REALY_HIFI3D_keypoints/" and "REALY_scan_region/" folder into "REALY/data/".
 
 - Use the images from REALY to reconstruct 3D meshes with your method(s). We provide the cropped and the original + depth map versions (512x512), respectively. You may use them according to your need.
 
@@ -42,17 +45,17 @@ Clone the repository and set up a conda environment with all dependencies as fol
 ### 2. Keypoints Preparation
 - [Important] Prepare the 85 barycentric keypoints file. The example of HIFI3D topology can be found at "REALY/data/HIFI3D.obj" and corresponding barycentric coordinate "REALY/data/HIFI3D.txt". 
    
-- [Optional] NOTE: If you use one of the same template(s) as the methods we compared in the paper, or you do not know how to export the barycentric file, you may ignore this step, and send one template mesh (".obj" file) to [Zenghao Chai](zenghaochai@gmail.com), and then the barycentric file will be sent back to you.
+- [Optional] NOTE: If you use one of the same template(s) as the methods we compared in the paper, or you do not know how to export the barycentric file, you may ignore this step, and send one template mesh (".obj" file) to [Zenghao Chai](mailto:zenghaochai@gmail.com), and then the barycentric file will be sent back to you.
 
 - Put your template mesh "\*.obj" and corresponding barycentric coordinate "REALY/data/*.txt" into "/REALY/data/".
 
 ### 3. Evaluation
 - To evaluate the results on the frontal/multi-view image sets, run
 ```
-python --REALY_HIFI3D_keypoints ./data/REALY_HIFI3D_keypoints/ --REALY_scan_region ./data/REALY_scan_region --prediction <PREDICTION_PATH> --template_topology <TEMPLATE_PATH> --scale_path ./data/metrical_scale.txt --save <SAVE_PATH>
+python main.py --REALY_HIFI3D_keypoints ./data/REALY_HIFI3D_keypoints/ --REALY_scan_region ./data/REALY_scan_region --prediction <PREDICTION_PATH> --template_topology <TEMPLATE_NAME> --scale_path ./data/metrical_scale.txt --save <SAVE_PATH>
 ```
 
-- Wait for the evaluation results, the NMSE of each region will be saved at "SAVE_PATH/REALY_error.txt", and the global aligned, regional aligned $S_P^*$, deformation $S_H^*$, and error map will be saved at "SAVE_PATH/region_align_save/".
+- Wait for the evaluation results, the NMSE of each region will be saved at "<SAVE_PATH>/REALY_error.txt", and the global aligned, regional aligned $S_P^*$, deformation $S_H^*$, and error map will be saved at "<SAVE_PATH>/region_align_save/".
 
 - [Optional] If you want to present your method(s) on [REALY](https://www.realy3dface.com/), please send the reconstructed meshes and barycentric coordinate files to us, and we will re-evaluate and check the results. After that, we will update the project page accordingly.
 
