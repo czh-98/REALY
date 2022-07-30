@@ -52,7 +52,7 @@ Clone the repository and set up a conda environment with all dependencies as fol
 python main.py --REALY_HIFI3D_keypoints ./data/REALY_HIFI3D_keypoints/ --REALY_scan_region ./data/REALY_scan_region --prediction <PREDICTION_PATH> --template_topology <TEMPLATE_NAME> --scale_path ./data/metrical_scale.txt --save <SAVE_PATH>
 ```
 
-- Wait for the evaluation results, the NMSE of each region will be saved at "<SAVE_PATH>/REALY_error.txt", and the global aligned, regional aligned ![](http://latex.codecogs.com/svg.latex?S_P^*), deformation ![](http://latex.codecogs.com/svg.latex?S_H^*), and error map will be saved at "<SAVE_PATH>/region_align_save/".
+- Wait for the evaluation results, the NMSE of each region will be saved at "<SAVE_PATH>/REALY_error.txt", and the global aligned, regional aligned S<sub>P</sub><sup>\*</sup>, deformation S<sub>H</sub><sup>\*</sup>, and error map will be saved at "<SAVE_PATH>/region_align_save/".
 
 - [Optional] If you want to present your method(s) on [REALY](https://www.realy3dface.com/), please send the reconstructed meshes and barycentric coordinate files to us, and we will re-evaluate and check the results. After that, we will update the project page accordingly.
 
