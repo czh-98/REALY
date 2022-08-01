@@ -54,11 +54,11 @@ If you have any question, please contact [Zenghao Chai](https://zenghaochai.com/
 If you use the 3DMM provided in this folder, please cite the following papers.
 
 ```
-@article{REALY,
-    author={Chai, Zenghao and Zhang, Haoxian and Ren, Jing and Kang, Di and Xu, Zhengzhuo and Zhe, Xuefei and Yuan, Chun and Bao, Linchao},
-    title={REALY: Rethinking the Evaluation of 3D Face Reconstruction},
-    journal={arXiv preprint arXiv:2203.09729},
-    year={2022}
+@inproceedings{REALY,
+  title={REALY: Rethinking the Evaluation of 3D Face Reconstruction},
+  author={Chai, Zenghao and Zhang, Haoxian and Ren, Jing and Kang, Di and Xu, Zhengzhuo and Zhe, Xuefei and Yuan, Chun and Bao, Linchao},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  year = {2022}
 }
 
 @article{LYHM,

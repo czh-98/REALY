@@ -28,10 +28,12 @@ Clone the repository and set up a conda environment with all dependencies as fol
 > conda env create -f environment.yaml \
 > conda activate REALY
 
+- NOTE: for Windows, you need to install *scikit-sparse* according to the guidline [here](https://github.com/EmJay276/scikit-sparse).
+
 
 ## Evaluation
 ### 1. Data Preparation
-- *TBD. We are contacting [LYHM](https://www-users.cs.york.ac.uk/~nep/research/LYHM/) to merge the REALY Benchmark with them, so it may require some time. Before that, if you want to evaluate your method(s), please refer to the temporary participation guideline at [REALY homepage](https://www.realy3dface.com/).* 
+- Obtain the access of Headspace dataset. Please sign the [Agreement](https://www-users.cs.york.ac.uk/~nep/research/LYHM/) according to their guideline, after getting the permission, send the reply message to [Zenghao Chai](mailto:zenghaochai@gmail.com). Then, we will send the download url to you.
 
 - Download the benchmark data, and put the "REALY_HIFI3D_keypoints/" and "REALY_scan_region/" folder into "REALY/data/".
 
@@ -72,11 +74,11 @@ If you use the code or REALY evaluation pipeline or results in your research, pl
 
 
 ```
-@article{REALY,
-    author={Chai, Zenghao and Zhang, Haoxian and Ren, Jing and Kang, Di and Xu, Zhengzhuo and Zhe, Xuefei and Yuan, Chun and Bao, Linchao},
-    title={REALY: Rethinking the Evaluation of 3D Face Reconstruction},
-    journal={arXiv preprint arXiv:2203.09729},
-    year={2022}
+@inproceedings{REALY,
+  title={REALY: Rethinking the Evaluation of 3D Face Reconstruction},
+  author={Chai, Zenghao and Zhang, Haoxian and Ren, Jing and Kang, Di and Xu, Zhengzhuo and Zhe, Xuefei and Yuan, Chun and Bao, Linchao},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  year = {2022}
 }
 ```
 
