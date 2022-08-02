@@ -29,9 +29,9 @@ The HIFI3D++ 3DMM is a full-head shape basis built from about 2,000 high quality
 
 ## Download
 
-The HIFI3D++ 3DMM can be downloaded from [Google Drive](https://drive.google.com/file/d/1MBdk5fsUN1paSOszZYXfwTMehq51Z2kY/view?usp=sharing). If you need HIFI3D, HIFI3D$^A$, or HIFI3D Albedo 3DMM, please refer to [HIFI3D](https://github.com/tencent-ailab/hifi3dface/tree/main/3DMM).
+The HIFI3D++ 3DMM can be downloaded from [Google Drive](https://drive.google.com/file/d/1MBdk5fsUN1paSOszZYXfwTMehq51Z2kY/view?usp=sharing). If you need HIFI3D, HIFI3D<sup>A</sup>, or HIFI3D Albedo 3DMM, please refer to [HIFI3D](https://github.com/tencent-ailab/hifi3dface/tree/main/3DMM).
 
-[Important]: The 3DMM is for research purpose only. For commercial uses, please contact [Linchao Bao](https://linchaobao.github.io/).
+[Important] The HIFI3D++ 3DMM is for research purpose only.
 
 
 
