@@ -42,9 +42,9 @@ Clone the repository and set up a conda environment with all dependencies as fol
 - [Important] Please save meshes as "\*.obj", where "\*" should have the same name as input images. NOTE: REALY is only suitable for meshes with the same topology. Please make sure the saved meshes share the same topology as your template mesh (e.g., if you use [Trimesh](https://trimsh.org/trimesh.html) to save meshes, please check whether you have set "process=False".)
 
 ### 2. Keypoints Preparation
-- [Important] Prepare the 85 barycentric keypoints file. The example of HIFI3D topology can be found at "REALY/data/HIFI3D.obj" and corresponding barycentric coordinate "REALY/data/HIFI3D.txt". 
+- [Important] To make a more accurate alignment, we extend 68 keypoints to 85 with additional keypoints in the facial cheek. Prepare the 85 barycentric keypoints file. The example of HIFI3D topology can be found at "REALY/data/HIFI3D.obj" and corresponding barycentric coordinate "REALY/data/HIFI3D.txt". 
    
-- [Optional] NOTE: If you use one of the same template(s) as the methods we compared in the paper, or you do not know how to export the barycentric file, you may ignore this step, and send one template mesh (".obj" file) to [Zenghao Chai](mailto:zenghaochai@gmail.com), and then the barycentric file will be sent back to you.
+- [Optional] NOTE: If you use one of the same template(s) as the methods we compared in the paper (e.g., BFM09, Deep3D, 3DDFA_v2, FLAME, HIFI3D, etc.), you can use the predefined keypoints in "REALY/data/" folder directly; or you do not know how to export the barycentric file, you may ignore this step, and send one template mesh (".obj" file) to [Zenghao Chai](mailto:zenghaochai@gmail.com), and then the barycentric file will be sent back to you.
 
 - Put your template mesh "\*.obj" and corresponding barycentric coordinate "REALY/data/*.txt" into "/REALY/data/".
 
