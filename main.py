@@ -69,6 +69,12 @@ def get_statistic_metric(args):
     print("average nmse@forehead = %.3f" % error_at_forehead_list.mean())
     print("average nmse@cheek = %.3f" % error_at_cheek_list.mean())
 
+    # median
+    print("median nmse@nose = %.3f" % np.median(error_at_nose_list))
+    print("median nmse@mouth = %.3f" % np.median(error_at_mouth_list))
+    print("median nmse@forehead = %.3f" % np.median(error_at_forehead_list))
+    print("median nmse@cheek = %.3f" % np.median(error_at_cheek_list))
+
     # std
     std = lambda data: data.std() * np.sqrt(data.shape[0]) / np.sqrt(data.shape[0] - 1)
     print("standard deviation nmse@nose = %.3f" % std(error_at_nose_list))

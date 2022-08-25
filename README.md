@@ -33,11 +33,11 @@ Clone the repository and set up a conda environment with all dependencies as fol
 
 ## Evaluation
 ### 1. Data Preparation
-- Obtain the access of Headspace dataset. Please sign the [Agreement](https://www-users.cs.york.ac.uk/~nep/research/LYHM/) according to their guideline, after getting the permission, send the reply message to [Zenghao Chai](mailto:zenghaochai@gmail.com). Then, we will send the download url to you.
+- We have merged our benchmark to the Headspace dataset. Please sign the [Agreement](https://www-users.cs.york.ac.uk/~nep/research/Headspace/) and indicate the usage of REALY benchmark according to their guideline, then you will get the permission to download the benchmark data.
 
-- Download the benchmark data, and put the "REALY_HIFI3D_keypoints/" and "REALY_scan_region/" folder into "REALY/data/".
+- Download and unzip the benchmark file, you will find three folders, put the "REALY_HIFI3D_keypoints/" and "REALY_scan_region/" folders into "REALY/data/".
 
-- Use the images from REALY to reconstruct 3D meshes with your method(s). We provide the cropped and the original + depth map versions (512x512), respectively. You may use them according to your need.
+- Use the images in the "REALY_image/" folder to reconstruct 3D meshes with your method(s). We provide the cropped and the original + depth map versions (512x512), respectively. You may use them according to your need.
 
 - [Important] Please save meshes as "\*.obj", where "\*" should have the same name as input images. NOTE: REALY is only suitable for meshes with the same topology. Please make sure the saved meshes share the same topology as your template mesh (e.g., if you use [Trimesh](https://trimsh.org/trimesh.html) to save meshes, please check whether you have set "process=False".)
 
