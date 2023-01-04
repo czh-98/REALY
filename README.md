@@ -33,7 +33,7 @@ Clone the repository and set up a conda environment with all dependencies as fol
 
 ## Evaluation
 ### 1. Data Preparation
-- We have merged our benchmark to the Headspace dataset. Please sign the [Agreement](https://www-users.cs.york.ac.uk/~nep/research/Headspace/) and indicate the usage of REALY benchmark according to their guideline, then you will get the permission to download the benchmark data.
+- We have merged our benchmark to the Headspace dataset. Please sign the [Agreement](https://www-users.york.ac.uk/~np7/research/Headspace/) and indicate the usage of REALY benchmark according to their guideline, then you will get the permission to download the benchmark data.
 
 - Download and unzip the benchmark file, you will find three folders, put the "REALY_HIFI3D_keypoints/" and "REALY_scan_region/" folders into "REALY/data/".
 
